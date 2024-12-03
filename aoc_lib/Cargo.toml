@@ -1,5 +1,5 @@
 [package]
-name = "day-01"
+name = "aoc_lib"
 version = "0.1.0"
 edition = "2021"
 
@@ -11,7 +11,7 @@ tracing.workspace = true
 tracing-subscriber.workspace = true
 anyhow.workspace = true
 clap.workspace = true
-aoc_lib = {path = "../aoc_lib"}
+thiserror.workspace = true
 
 [dev-dependencies]
 divan.workspace = true
@@ -19,7 +19,3 @@ rstest.workspace = true
 test-log.workspace = true
 tempdir.workspace = true
 
-[[bench]]
-name = "day-01-bench"
-path = "benches/benchmarks.rs"
-harness = false
