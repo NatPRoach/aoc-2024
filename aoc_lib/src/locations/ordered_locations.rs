@@ -25,6 +25,17 @@ impl OrderedLocations {
         self.len() == 0
     }
 
+    pub fn into_count_hashmap(self) -> HashMap<Location, usize> {
+        let mut count_map = HashMap::with_capacity(self.len());
+        for element in self.inner.into_iter() {
+            if let Some(v) = count_map.get_mut(&element) {
+                *v += 1
+            } else {
+                count_map.insert(element, 1usize);
+            }
+        }
+        count_map
+    }
 }
 
 impl<I: IntoIterator<Item = Location>> From<I> for OrderedLocations {

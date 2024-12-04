@@ -1,6 +1,6 @@
-use day_01::part2::process;
 use anyhow::Context;
 use clap::Parser;
+use day_01::part2::process;
 
 #[derive(Parser, Debug)]
 #[command(name = "day_01")]
