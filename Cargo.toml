@@ -1,8 +1,8 @@
 [workspace]
 resolver = "2"
 
-members = ["day-*"]
-default-members = ["day-*"]
+members = ["aoc_lib", "day-*"]
+default-members = ["aoc_lib", "day-*"]
 
 [workspace.dependencies]
 anyhow = "1.0.93"
@@ -18,3 +18,4 @@ test-log = { version = "0.2.13", default-features = false, features = [
     "trace",
 ] }
 tempdir = "0.3.7"
+thiserror = "2.0.4"
