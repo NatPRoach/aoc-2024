@@ -7,10 +7,7 @@ fn main() {
 
 #[divan::bench]
 fn part1() {
-    part1::process(divan::black_box(
-        "../input1.txt",
-    ))
-    .unwrap();
+    part1::process(divan::black_box("../.input_data/day1a.tsv")).unwrap();
 }
 
 #[divan::bench]
