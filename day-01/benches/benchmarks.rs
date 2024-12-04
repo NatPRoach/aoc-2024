@@ -12,8 +12,5 @@ fn part1() {
 
 #[divan::bench]
 fn part2() {
-    part2::process(divan::black_box(
-        "../input2.txt",
-    ))
-    .unwrap();
+    part2::process(divan::black_box("../.input_data/day1a.tsv")).unwrap();
 }

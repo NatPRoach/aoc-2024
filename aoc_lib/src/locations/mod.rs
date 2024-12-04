@@ -1,3 +1,4 @@
+pub mod location_list_merge;
 pub mod ordered_locations;
 
 #[derive(Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
